@@ -51,9 +51,9 @@
 	}
 }
 
-/* Keep icon clickable when modal is open */
-.NPG-container[open] + .notification-indicator {
-	z-index: 101;
+/* Keep notification indicator on top when modal is open */
+notification-indicator:has(.NPG-container[open]) {
+	z-index: 9999;
 }
 
 /* Style the unread count */
